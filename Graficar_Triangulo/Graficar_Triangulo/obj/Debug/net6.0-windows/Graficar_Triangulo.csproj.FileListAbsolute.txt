@@ -1,0 +1,16 @@
+C:\Users\Yordan\Documents\graficacion_visual\Graficar_Triangulo\Graficar_Triangulo\bin\Debug\net6.0-windows\Graficar_Triangulo.exe
+C:\Users\Yordan\Documents\graficacion_visual\Graficar_Triangulo\Graficar_Triangulo\bin\Debug\net6.0-windows\Graficar_Triangulo.deps.json
+C:\Users\Yordan\Documents\graficacion_visual\Graficar_Triangulo\Graficar_Triangulo\bin\Debug\net6.0-windows\Graficar_Triangulo.runtimeconfig.json
+C:\Users\Yordan\Documents\graficacion_visual\Graficar_Triangulo\Graficar_Triangulo\bin\Debug\net6.0-windows\Graficar_Triangulo.dll
+C:\Users\Yordan\Documents\graficacion_visual\Graficar_Triangulo\Graficar_Triangulo\bin\Debug\net6.0-windows\Graficar_Triangulo.pdb
+C:\Users\Yordan\Documents\graficacion_visual\Graficar_Triangulo\Graficar_Triangulo\obj\Debug\net6.0-windows\Graficar_Triangulo.Form1.resources
+C:\Users\Yordan\Documents\graficacion_visual\Graficar_Triangulo\Graficar_Triangulo\obj\Debug\net6.0-windows\Graficar_Triangulo.csproj.GenerateResource.cache
+C:\Users\Yordan\Documents\graficacion_visual\Graficar_Triangulo\Graficar_Triangulo\obj\Debug\net6.0-windows\Graficar_Triangulo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Yordan\Documents\graficacion_visual\Graficar_Triangulo\Graficar_Triangulo\obj\Debug\net6.0-windows\Graficar_Triangulo.AssemblyInfoInputs.cache
+C:\Users\Yordan\Documents\graficacion_visual\Graficar_Triangulo\Graficar_Triangulo\obj\Debug\net6.0-windows\Graficar_Triangulo.AssemblyInfo.cs
+C:\Users\Yordan\Documents\graficacion_visual\Graficar_Triangulo\Graficar_Triangulo\obj\Debug\net6.0-windows\Graficar_Triangulo.csproj.CoreCompileInputs.cache
+C:\Users\Yordan\Documents\graficacion_visual\Graficar_Triangulo\Graficar_Triangulo\obj\Debug\net6.0-windows\Graficar_Triangulo.dll
+C:\Users\Yordan\Documents\graficacion_visual\Graficar_Triangulo\Graficar_Triangulo\obj\Debug\net6.0-windows\refint\Graficar_Triangulo.dll
+C:\Users\Yordan\Documents\graficacion_visual\Graficar_Triangulo\Graficar_Triangulo\obj\Debug\net6.0-windows\Graficar_Triangulo.pdb
+C:\Users\Yordan\Documents\graficacion_visual\Graficar_Triangulo\Graficar_Triangulo\obj\Debug\net6.0-windows\Graficar_Triangulo.genruntimeconfig.cache
+C:\Users\Yordan\Documents\graficacion_visual\Graficar_Triangulo\Graficar_Triangulo\obj\Debug\net6.0-windows\ref\Graficar_Triangulo.dll
