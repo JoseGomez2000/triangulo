@@ -17,7 +17,7 @@ namespace Graficar_Triangulo
         public Form1()
         {
             InitializeComponent();
-            cooABC = new coordenadasABC(txt_XA, txt_XB, txt_XC, txt_YA, txt_YB, txt_YC,txt_ABx,txt_BCx,txt_CAx, txt_ABy, txt_BCy, txt_CAy, PB_Grafica);
+            cooABC = new coordenadasABC(txt_XA, txt_XB, txt_XC, txt_YA, txt_YB, txt_YC, txt_ABx, txt_BCx, txt_CAx, txt_ABy, txt_BCy, txt_CAy, PB_Grafica);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -58,7 +58,24 @@ namespace Graficar_Triangulo
 
         private void PB_Grafica_Paint(object sender, PaintEventArgs e)
         {
-           // ob_graficaxy.grafica(PB_Grafica);
+            // ob_graficaxy.grafica(PB_Grafica);
+        }
+
+        private void btn_limpiar_Click(object sender, EventArgs e)
+        {
+            txt_XA.Clear();
+            txt_YB.Clear();
+            txt_XB.Clear();
+            txt_YB.Clear();
+            txt_XC.Clear();
+            txt_YC.Clear();
+            txt_ABx.Clear();
+            txt_ABy.Clear();
+            txt_BCx.Clear();
+            txt_BCy.Clear();
+            txt_CAx.Clear();
+            txt_CAy.Clear();
+            PB_Grafica.Image = null;
         }
     }
 }

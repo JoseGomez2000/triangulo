@@ -126,14 +126,14 @@ namespace Graficar_Triangulo
 {
     public class coordenadasABC
     {
-        private Pen lapiz;
+        private Pen lapiz, lapizr;
         private Graphics graficos;
         private TextBox txt_XA, txt_XB, txt_XC, txt_YA, txt_YB, txt_YC;
         private TextBox txt_ABx, txt_BCx, txt_CAx, txt_ABy, txt_BCy, txt_CAy;
         private PictureBox PB_Grafica;
 
         // Inicializa los valores de las coordenadas en 0
-        private double XA = 0, YA = 0, XB = 0, YB = 0, XC = 0, YC = 0;
+        private double XA = 0, YA = 0, XB = 0, YB = 0, XC = 0, YC = 0, xToC, yToC;
 
         public coordenadasABC(TextBox txt_XA, TextBox txt_XB, TextBox txt_XC, TextBox txt_YA, TextBox txt_YB, TextBox txt_YC, TextBox txt_ABx, TextBox txt_BCx, TextBox txt_CAx, TextBox txt_ABy, TextBox txt_BCy, TextBox txt_CAy, PictureBox PB_Grafica)
         {
@@ -153,6 +153,7 @@ namespace Graficar_Triangulo
 
             // Inicializa el lápiz y los gráficos
             lapiz = new Pen(Color.Black);
+            lapizr = new Pen(Color.Red);
             graficos = PB_Grafica.CreateGraphics();
         }
 
@@ -171,30 +172,51 @@ namespace Graficar_Triangulo
                 graficos.DrawLine(lapiz, (float)XB, (float)YB, (float)XC, (float)YC); // Trazo de BC
                 graficos.DrawLine(lapiz, (float)XC, (float)YC, (float)XA, (float)YA); // Trazo de CA
 
-                // Calcula y muestra las coordenadas de todos los puntos en las líneas AB, BC y CA
-              /*  txt_ABx.Text = "AB: ";
-                txt_BCx.Text = "BC: ";
-                txt_CAx.Text = "CA: ";*/
+                /*// Invierte el eje Y
+                YA = PB_Grafica.Height - YA;
+                YB = PB_Grafica.Height - YB;
+                YC = PB_Grafica.Height - YC;*/
 
-                for (double t = 0; t <= 1; t += 0.1)
+                Font coorenadas = new Font("Arial", 10);
+                Brush linea = Brushes.Black;
+
+                graficos.DrawString("A", coorenadas, linea, (float)XA, (float)YA - 20);
+                graficos.DrawString("B", coorenadas, linea, (float)XB, (float)YB - 20);
+                graficos.DrawString("C", coorenadas, linea, (float)XC, (float)YC - 20);
+
+                //lineas del triangulo
+                for (double i = 0; i <= 1; i += 0.1)
                 {
-                    double xAB = XA + t * (XB - XA);
-                    double yAB = YA + t * (YB - YA);
+                    double xAB = XA + i * (XB - XA);
+                    double yAB = YA + i * (YB - YA);
                     txt_ABx.Text += $"({xAB}) {Environment.NewLine}";
                     txt_ABy.Text += $"({yAB}) {Environment.NewLine}";
 
-                    double xBC = XB + t * (XC - XB);
-                    double yBC = YB + t * (YC - YB);
+                    double xBC = XB + i * (XC - XB);
+                    double yBC = YB + i * (YC - YB);
                     txt_BCx.Text += $"({xBC}) {Environment.NewLine}";
                     txt_BCy.Text += $"({yBC}) {Environment.NewLine}";
 
-
-                    double xCA = XC + t * (XA - XC);
-                    double yCA = YC + t * (YA - YC);
+                    double xCA = XC + i * (XA - XC);
+                    double yCA = YC + i * (YA - YC);
                     txt_CAx.Text += $"({xCA})  {Environment.NewLine}";
                     txt_CAy.Text += $"({yCA}) {Environment.NewLine}";
                 }
-             }
+
+                //lineas dentro del triangulo
+                for (double j = 0; j <= 1; j += 0.1)
+                {
+                    double xToC = XA + j * (XC - XA);
+                    double yToC = YA + j * (YC - YA);
+
+                    double xBC = XB + j * (XC - XB);
+                    double yBC = YB + j * (YC - YB);
+
+                    graficos.DrawLine(lapizr, (float)XB, (float)YB, (float)xBC, (float)yBC);  // Dibuja línea BC
+                    graficos.DrawLine(lapizr, (float)XB, (float)YB, (float)xToC, (float)yToC);  // Dibuja línea desde B a la intersección con C
+                }
+
+            }
             else
             {
                 MessageBox.Show("Por favor, ingrese coordenadas válidas.");

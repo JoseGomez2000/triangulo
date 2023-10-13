@@ -385,6 +385,7 @@
             btn_limpiar.TabIndex = 33;
             btn_limpiar.Text = "Limpiar";
             btn_limpiar.UseVisualStyleBackColor = true;
+            btn_limpiar.Click += btn_limpiar_Click;
             // 
             // Form1
             // 
