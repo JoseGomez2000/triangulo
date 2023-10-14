@@ -242,9 +242,9 @@
             // PB_Grafica
             // 
             PB_Grafica.BackColor = SystemColors.ButtonHighlight;
-            PB_Grafica.Location = new Point(862, 82);
+            PB_Grafica.Location = new Point(862, 61);
             PB_Grafica.Name = "PB_Grafica";
-            PB_Grafica.Size = new Size(751, 700);
+            PB_Grafica.Size = new Size(751, 721);
             PB_Grafica.TabIndex = 19;
             PB_Grafica.TabStop = false;
             PB_Grafica.Click += PB_Grafica_Click;

@@ -31,20 +31,20 @@ namespace Graficar_Triangulo
             StringFormat formato = new StringFormat();
             formato.Alignment = StringAlignment.Center;
             formato.LineAlignment = StringAlignment.Center;
-   
+
             for (int i = -11; i <= 11; i++)
-            {
-                int x = ancho / 2 + i * 30; // Espaciado de las marcas en el eje X
-                int y = alto / 2 - i * 30; // Espaciado de las marcas en el eje Y
-                graf.DrawLine(lapiz, x, alto / 2 - 5, x, alto / 2 + 5); // Marcas en el eje X
-                graf.DrawLine(lapiz, ancho / 2 - 5, y, ancho / 2 + 5, y); // Marcas en el eje Y
+             {
+                 int x = ancho / 2 + i * 30; // Espaciado de las marcas en el eje X
+                 int y = alto / 2 - i * 30; // Espaciado de las marcas en el eje Y
+                 graf.DrawLine(lapiz, x, alto / 2 - 5, x, alto / 2 + 5); // Marcas en el eje X
+                 graf.DrawLine(lapiz, ancho / 2 - 5, y, ancho / 2 + 5, y); // Marcas en el eje Y
 
-                string numero = i == 0 ? "0" : Math.Abs(i).ToString(); // Usa Math.Abs para asegurarte de que los valores sean positivos
-                graf.DrawString(numero, fuente, Brushes.Black, new RectangleF(x - 15, alto / 2 + 10, 30, 20), formato); // Números en el eje X
+                 string numero = i == 0 ? "0" : Math.Abs(i).ToString(); // Usa Math.Abs para asegurarte de que los valores sean positivos
+                 graf.DrawString(numero, fuente, Brushes.Black, new RectangleF(x - 15, alto / 2 + 10, 30, 20), formato); // Números en el eje X
 
-                 numero = -i == 0 ? "0" : Math.Abs(i).ToString(); // Usa Math.Abs para asegurarte de que los valores sean positivos
-                graf.DrawString(numero, fuente, Brushes.Black, new RectangleF( ancho/2- 25, y - 10, 30, 20), formato); // Números en el eje X
-            }
+                  numero = -i == 0 ? "0" : Math.Abs(i).ToString(); // Usa Math.Abs para asegurarte de que los valores sean positivos
+                 graf.DrawString(numero, fuente, Brushes.Black, new RectangleF( ancho/2- 25, y - 10, 30, 20), formato); // Números en el eje X
+             }
         }
-}
+    }
 }

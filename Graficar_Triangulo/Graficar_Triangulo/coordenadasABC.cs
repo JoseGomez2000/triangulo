@@ -121,6 +121,7 @@ namespace Graficar_Triangulo
 using System;
 using System.Windows.Forms;
 using System.Drawing;
+using static System.Windows.Forms.DataFormats;
 
 namespace Graficar_Triangulo
 {
@@ -159,6 +160,8 @@ namespace Graficar_Triangulo
 
         public void verificarCoordenadas()
         {
+
+            
             // Verifica si los valores ingresados en los TextBox son números válidos
             if (double.TryParse(txt_XA.Text, out XA) &&
                 double.TryParse(txt_YA.Text, out YA) &&
@@ -167,15 +170,15 @@ namespace Graficar_Triangulo
                 double.TryParse(txt_XC.Text, out XC) &&
                 double.TryParse(txt_YC.Text, out YC))
             {
+
+                YA = PB_Grafica.Height - YA;
+                YB = PB_Grafica.Height - YB;
+                YC = PB_Grafica.Height - YC;
+
                 // Dibuja las líneas del triángulo utilizando las coordenadas calculadas
                 graficos.DrawLine(lapiz, (float)XA, (float)YA, (float)XB, (float)YB); // Trazo de AB
                 graficos.DrawLine(lapiz, (float)XB, (float)YB, (float)XC, (float)YC); // Trazo de BC
                 graficos.DrawLine(lapiz, (float)XC, (float)YC, (float)XA, (float)YA); // Trazo de CA
-
-                /*// Invierte el eje Y
-                YA = PB_Grafica.Height - YA;
-                YB = PB_Grafica.Height - YB;
-                YC = PB_Grafica.Height - YC;*/
 
                 Font coorenadas = new Font("Arial", 10);
                 Brush linea = Brushes.Black;
@@ -184,7 +187,6 @@ namespace Graficar_Triangulo
                 graficos.DrawString("B", coorenadas, linea, (float)XB, (float)YB - 20);
                 graficos.DrawString("C", coorenadas, linea, (float)XC, (float)YC - 20);
 
-                //lineas del triangulo
                 for (double i = 0; i <= 1; i += 0.1)
                 {
                     double xAB = XA + i * (XB - XA);
@@ -213,14 +215,28 @@ namespace Graficar_Triangulo
                     double yBC = YB + j * (YC - YB);
 
                     graficos.DrawLine(lapizr, (float)XB, (float)YB, (float)xBC, (float)yBC);  // Dibuja línea BC
+
+                    double xAB = XA + j * (XB - XA);
+                    double yAB = YA + j * (YB - YA);
+                    txt_ABx.Text += $"({xAB}) {Environment.NewLine}";
+                    txt_ABy.Text += $"({yAB}) {Environment.NewLine}";
+
+                    double xCA = XC + j * (XA - XC);
+                    double yCA = YC + j * (YA - YC);
+                    txt_CAx.Text += $"({xCA})  {Environment.NewLine}";
+                    txt_CAy.Text += $"({yCA}) {Environment.NewLine}";
+
                     graficos.DrawLine(lapizr, (float)XB, (float)YB, (float)xToC, (float)yToC);  // Dibuja línea desde B a la intersección con C
                 }
+
 
             }
             else
             {
                 MessageBox.Show("Por favor, ingrese coordenadas válidas.");
             }
+
+
         }
     }
 }
