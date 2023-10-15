@@ -62,6 +62,12 @@
             label19 = new Label();
             btn_mostrar = new Button();
             btn_limpiar = new Button();
+            label20 = new Label();
+            label21 = new Label();
+            label22 = new Label();
+            txt_pAB = new TextBox();
+            txt_pBC = new TextBox();
+            txt_pAC = new TextBox();
             ((System.ComponentModel.ISupportInitialize)PB_Grafica).BeginInit();
             SuspendLayout();
             // 
@@ -213,7 +219,7 @@
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label11.Location = new Point(111, 267);
+            label11.Location = new Point(129, 267);
             label11.Name = "label11";
             label11.Size = new Size(42, 27);
             label11.TabIndex = 16;
@@ -223,7 +229,7 @@
             // 
             label12.AutoSize = true;
             label12.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label12.Location = new Point(400, 267);
+            label12.Location = new Point(412, 267);
             label12.Name = "label12";
             label12.Size = new Size(44, 27);
             label12.TabIndex = 17;
@@ -233,7 +239,7 @@
             // 
             label13.AutoSize = true;
             label13.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label13.Location = new Point(702, 267);
+            label13.Location = new Point(712, 277);
             label13.Name = "label13";
             label13.Size = new Size(48, 27);
             label13.TabIndex = 18;
@@ -241,10 +247,10 @@
             // 
             // PB_Grafica
             // 
-            PB_Grafica.BackColor = SystemColors.ButtonHighlight;
-            PB_Grafica.Location = new Point(862, 61);
+            PB_Grafica.BackColor = Color.FromArgb(255, 255, 192);
+            PB_Grafica.Location = new Point(1033, 32);
             PB_Grafica.Name = "PB_Grafica";
-            PB_Grafica.Size = new Size(751, 721);
+            PB_Grafica.Size = new Size(792, 785);
             PB_Grafica.TabIndex = 19;
             PB_Grafica.TabStop = false;
             PB_Grafica.Click += PB_Grafica_Click;
@@ -252,64 +258,64 @@
             // 
             // txt_ABx
             // 
-            txt_ABx.Location = new Point(4, 338);
+            txt_ABx.Location = new Point(-2, 400);
             txt_ABx.Multiline = true;
             txt_ABx.Name = "txt_ABx";
             txt_ABx.ReadOnly = true;
-            txt_ABx.Size = new Size(125, 374);
+            txt_ABx.Size = new Size(163, 374);
             txt_ABx.TabIndex = 20;
             txt_ABx.TextChanged += txt_ABx_TextChanged;
             // 
             // txt_ABy
             // 
-            txt_ABy.Location = new Point(147, 342);
+            txt_ABy.Location = new Point(167, 396);
             txt_ABy.Multiline = true;
             txt_ABy.Name = "txt_ABy";
             txt_ABy.ReadOnly = true;
-            txt_ABy.Size = new Size(125, 374);
+            txt_ABy.Size = new Size(163, 374);
             txt_ABy.TabIndex = 21;
             // 
             // txt_BCx
             // 
-            txt_BCx.Location = new Point(292, 342);
+            txt_BCx.Location = new Point(340, 396);
             txt_BCx.Multiline = true;
             txt_BCx.Name = "txt_BCx";
             txt_BCx.ReadOnly = true;
-            txt_BCx.Size = new Size(125, 374);
+            txt_BCx.Size = new Size(163, 374);
             txt_BCx.TabIndex = 22;
             // 
             // txt_BCy
             // 
-            txt_BCy.Location = new Point(433, 342);
+            txt_BCy.Location = new Point(509, 396);
             txt_BCy.Multiline = true;
             txt_BCy.Name = "txt_BCy";
             txt_BCy.ReadOnly = true;
-            txt_BCy.Size = new Size(125, 374);
+            txt_BCy.Size = new Size(163, 374);
             txt_BCy.TabIndex = 23;
             // 
             // txt_CAx
             // 
-            txt_CAx.Location = new Point(588, 342);
+            txt_CAx.Location = new Point(681, 396);
             txt_CAx.Multiline = true;
             txt_CAx.Name = "txt_CAx";
             txt_CAx.ReadOnly = true;
-            txt_CAx.Size = new Size(125, 378);
+            txt_CAx.Size = new Size(164, 378);
             txt_CAx.TabIndex = 24;
             // 
             // txt_CAy
             // 
-            txt_CAy.Location = new Point(739, 338);
+            txt_CAy.Location = new Point(851, 396);
             txt_CAy.Multiline = true;
             txt_CAy.Name = "txt_CAy";
             txt_CAy.ReadOnly = true;
-            txt_CAy.Size = new Size(106, 382);
+            txt_CAy.Size = new Size(164, 382);
             txt_CAy.TabIndex = 25;
             // 
             // label14
             // 
             label14.AutoSize = true;
             label14.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label14.Location = new Point(27, 308);
+            label14.Location = new Point(28, 366);
             label14.Name = "label14";
             label14.Size = new Size(26, 27);
             label14.TabIndex = 26;
@@ -319,7 +325,7 @@
             // 
             label15.AutoSize = true;
             label15.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label15.Location = new Point(187, 308);
+            label15.Location = new Point(188, 366);
             label15.Name = "label15";
             label15.Size = new Size(26, 27);
             label15.TabIndex = 27;
@@ -329,7 +335,7 @@
             // 
             label16.AutoSize = true;
             label16.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label16.Location = new Point(344, 308);
+            label16.Location = new Point(392, 366);
             label16.Name = "label16";
             label16.Size = new Size(26, 27);
             label16.TabIndex = 28;
@@ -339,7 +345,7 @@
             // 
             label17.AutoSize = true;
             label17.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label17.Location = new Point(642, 308);
+            label17.Location = new Point(712, 366);
             label17.Name = "label17";
             label17.Size = new Size(26, 27);
             label17.TabIndex = 29;
@@ -349,7 +355,7 @@
             // 
             label18.AutoSize = true;
             label18.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label18.Location = new Point(475, 308);
+            label18.Location = new Point(548, 366);
             label18.Name = "label18";
             label18.Size = new Size(26, 27);
             label18.TabIndex = 30;
@@ -359,7 +365,7 @@
             // 
             label19.AutoSize = true;
             label19.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label19.Location = new Point(778, 308);
+            label19.Location = new Point(896, 366);
             label19.Name = "label19";
             label19.Size = new Size(26, 27);
             label19.TabIndex = 31;
@@ -368,7 +374,7 @@
             // btn_mostrar
             // 
             btn_mostrar.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btn_mostrar.Location = new Point(93, 746);
+            btn_mostrar.Location = new Point(548, 56);
             btn_mostrar.Name = "btn_mostrar";
             btn_mostrar.Size = new Size(120, 36);
             btn_mostrar.TabIndex = 32;
@@ -379,7 +385,7 @@
             // btn_limpiar
             // 
             btn_limpiar.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btn_limpiar.Location = new Point(400, 746);
+            btn_limpiar.Location = new Point(548, 135);
             btn_limpiar.Name = "btn_limpiar";
             btn_limpiar.Size = new Size(101, 36);
             btn_limpiar.TabIndex = 33;
@@ -387,11 +393,74 @@
             btn_limpiar.UseVisualStyleBackColor = true;
             btn_limpiar.Click += btn_limpiar_Click;
             // 
+            // label20
+            // 
+            label20.AutoSize = true;
+            label20.Font = new Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label20.Location = new Point(-2, 330);
+            label20.Name = "label20";
+            label20.Size = new Size(132, 21);
+            label20.TabIndex = 34;
+            label20.Text = "pendiente AB";
+            label20.Click += label20_Click;
+            // 
+            // label21
+            // 
+            label21.AutoSize = true;
+            label21.Font = new Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label21.Location = new Point(286, 327);
+            label21.Name = "label21";
+            label21.Size = new Size(132, 21);
+            label21.TabIndex = 35;
+            label21.Text = "pendiente AB";
+            // 
+            // label22
+            // 
+            label22.AutoSize = true;
+            label22.Font = new Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label22.Location = new Point(589, 319);
+            label22.Name = "label22";
+            label22.Size = new Size(132, 21);
+            label22.TabIndex = 36;
+            label22.Text = "pendiente AB";
+            label22.Click += label22_Click;
+            // 
+            // txt_pAB
+            // 
+            txt_pAB.Location = new Point(144, 327);
+            txt_pAB.Name = "txt_pAB";
+            txt_pAB.ReadOnly = true;
+            txt_pAB.Size = new Size(125, 27);
+            txt_pAB.TabIndex = 37;
+            // 
+            // txt_pBC
+            // 
+            txt_pBC.Location = new Point(432, 328);
+            txt_pBC.Name = "txt_pBC";
+            txt_pBC.ReadOnly = true;
+            txt_pBC.Size = new Size(125, 27);
+            txt_pBC.TabIndex = 38;
+            // 
+            // txt_pAC
+            // 
+            txt_pAC.Location = new Point(728, 321);
+            txt_pAC.Name = "txt_pAC";
+            txt_pAC.ReadOnly = true;
+            txt_pAC.Size = new Size(125, 27);
+            txt_pAC.TabIndex = 39;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1625, 815);
+            BackColor = Color.Lavender;
+            ClientSize = new Size(1826, 959);
+            Controls.Add(txt_pAC);
+            Controls.Add(txt_pBC);
+            Controls.Add(txt_pAB);
+            Controls.Add(label22);
+            Controls.Add(label21);
+            Controls.Add(label20);
             Controls.Add(btn_limpiar);
             Controls.Add(btn_mostrar);
             Controls.Add(label19);
@@ -470,5 +539,11 @@
         private Label label19;
         private Button btn_mostrar;
         private Button btn_limpiar;
+        private Label label20;
+        private Label label21;
+        private Label label22;
+        private TextBox txt_pAB;
+        private TextBox txt_pBC;
+        private TextBox txt_pAC;
     }
 }
